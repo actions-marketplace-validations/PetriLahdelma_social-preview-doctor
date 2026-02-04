@@ -1,0 +1,8 @@
+{
+  "finalUrl": "https://example.com",
+  "meta": {
+    "og:title": "Example Domain",
+    "og:image": "https://example.com/og.png",
+    "twitter:card": "summary"
+  }
+}
