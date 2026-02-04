@@ -35,5 +35,8 @@
   "homepage": "https://github.com/PetriLahdelma/social-preview-doctor#readme",
   "bugs": {
     "url": "https://github.com/PetriLahdelma/social-preview-doctor/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
   }
 }
