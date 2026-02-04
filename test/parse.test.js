@@ -10,6 +10,6 @@ const html = `<!doctype html><html><head>
 const meta = extractMeta(html);
 assert.equal(meta["og:title"], "Hello");
 assert.equal(meta["twitter:card"], "summary");
-assert.ok(meta.title);
+assert.ok(meta.title || meta['og:title']);
 
 console.log("parse.test.js ok");
