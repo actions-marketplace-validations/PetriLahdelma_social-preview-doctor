@@ -1,0 +1,39 @@
+{
+  "name": "social-preview-doctor",
+  "version": "0.1.0",
+  "description": "CLI that emulates social crawlers to debug OG/Twitter previews.",
+  "type": "module",
+  "bin": {
+    "social-preview-doctor": "dist/index.js"
+  },
+  "exports": {
+    ": ": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && node dist/index.js",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node test/parse.test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetriLahdelma/social-preview-doctor.git"
+  },
+  "homepage": "https://github.com/PetriLahdelma/social-preview-doctor#readme",
+  "bugs": {
+    "url": "https://github.com/PetriLahdelma/social-preview-doctor/issues"
+  }
+}
