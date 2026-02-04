@@ -141,10 +141,11 @@ async function main() {
     process.exit(1);
   }
 
+  const url = opts.url;
   const headers = getHeaders(opts.bot);
   const started = Date.now();
   const { chain, finalUrl, html, headers: finalHeaders } = await fetchChain(
-    opts.url,
+    url,
     headers,
     opts.maxRedirects,
     opts.timeoutMs
