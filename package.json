@@ -19,7 +19,8 @@
     "build": "tsc -p tsconfig.json",
     "dev": "npm run build && node dist/index.js",
     "lint": "tsc -p tsconfig.json --noEmit",
-    "test": "npm run build && node test/parse.test.js"
+    "test": "npm run build && node test/parse.test.js",
+    "render": "node scripts/render-hero.mjs && node scripts/render-og.mjs && node scripts/render-before-after.mjs && node scripts/render-readme.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12"
@@ -37,6 +38,7 @@
     "url": "https://github.com/PetriLahdelma/social-preview-doctor/issues"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30"
+    "@types/node": "^20.11.30",
+    "playwright": "^1.49.0"
   }
 }
